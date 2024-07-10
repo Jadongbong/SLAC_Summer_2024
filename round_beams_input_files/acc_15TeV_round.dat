@@ -1,0 +1,42 @@
+$ACCELERATOR:: PWFA
+{
+energy=7500.0;
+particles=0.500;
+beta_x=0.15000;
+beta_y=0.15000;
+emitt_x=0.100;
+emitt_y=0.100;
+sigma_z=5.00;
+charge_sign=-1;
+offset_y=0.0;
+}
+
+
+$PARAMETERS:: plasma
+{
+n_x=600 ;   
+n_y=600 ;   
+n_z=210 ;   
+n_t=1 ;    
+cut_x=9.0*sigma_x.1;    
+cut_y=9.0*sigma_y.1;    
+cut_z=3.5*sigma_z.1;    
+n_m= 10000000;
+electron_ratio=0.2;
+photon_ratio=1e-6;
+do_photons=0;
+store_beam=3;
+load_beam=0;
+load_photons=0;
+do_lumi=1;
+lumi_p_gg=1e-28;
+num_lumi_gg=2000000;
+do_coherent=0;
+do_trident=0;
+ecm_min=0.80*2*energy.1;
+grids=0;
+do_pairs=0;
+pair_ecut=0;
+track_pairs=0;
+do_hadrons=0;
+}
